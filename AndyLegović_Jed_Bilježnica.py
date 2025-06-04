@@ -17,13 +17,15 @@ def dodaj_biljesku():
             redni_broj = len(linije) + 1
     except FileNotFoundError:
         redni_broj = 1
+
+    if bilj.strip() == "":
+        messagebox.showwarning("Upozorenje", "Niste upisali bilješku!")
+        return
+
+    vrijeme_unosa = datetime.datetime.now().strftime("%d.%m.%Y %H:%M")
     with open("Jednostavna_Bilježnica.txt", "a") as bilježnica:
-        if bilj.strip() == "":
-            messagebox.showwarning("Upozorenje", "Niste upisali bilješku!")
-            return
-        else:
-            bilježnica.write(f"{redni_broj}. {bilj}\n")
-            messagebox.showinfo("Info", "Bilješka je uspješno spremljena")
+        bilježnica.write(f"{redni_broj}.[{vrijeme_unosa}]{bilj}\n")
+        messagebox.showinfo("Info", "Bilješka je uspješno spremljena")
 
 def prikazi_biljeske():
         with open("Jednostavna_Bilježnica.txt", "r") as bilježnica:
