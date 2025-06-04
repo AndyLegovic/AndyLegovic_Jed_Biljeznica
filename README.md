@@ -5,5 +5,5 @@ Korištenje:
 Funkcije:
 
 Dodavanje bilješki-u prazno polje upišite tekst i kliknite "Dodaj bilješku"
-Prikaz bilješki-klikom na gumb pojavit će se vaše bilješke sa rednim brojem
+Prikaz bilješki-klikom na gumb pojavit će se vaše bilješke sa rednim brojem i datumom upisivanja
 Brisanje bilješki-klikom na gumb izbrisat će se sve vaše bilješke(kliknite na prikaz bilješki da se vidi promjena)
