@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import messagebox
 import datetime
 
-open("Jednostavna_Bilježnica.txt", "w").close()
+open("Jednostavna_Bilježnica.txt", "w").close() #Isprazni tekstni dokument prije korištenja
 
 def izbrisi():
     with open("Jednostavna_Bilježnica.txt", "w") as bilježnica:
